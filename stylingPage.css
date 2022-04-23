@@ -1,0 +1,150 @@
+/* Box Styling views*/
+
+* {
+    box-sizing: border-box;
+    font-family: Arial; 
+    display:flex;
+    flex-direction: column;
+     
+}
+
+header, footer, main{
+    border: 3px solid gray;
+    min-height: 60px;
+}
+section{
+    border: 4px solid yellow;
+    margin: 0 10 0 100;
+    border-radius: 12px;
+}
+.inner-column{
+    display: block;
+    border: 10px solid green;
+    padding: 10px 20px;
+    width: 98%;
+    max-width: 1000px;
+    margin-right:auto;
+    margin-left: auto;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  border: 20px solid blue;
+  min-height: 100vh;
+}
+main{
+  flex-grow:1;
+  background-color: #33F;
+  /*Top Box Styling*/
+}
+.top-box{
+  border: 5px solid red;
+  display: block;
+  padding-top:20px;
+
+  text-align: center;
+  position: left;
+  
+}
+.info-box{
+  display:inline-block;
+  border: 3px solid aqua;
+  padding-top: 5%;
+  
+}
+picture{
+  display: inline-block;
+}
+img{
+  display: block;
+  width 100%;
+  height: auto;
+}
+button {
+  display:block;
+  padding: 10px;
+  background-color: orange;
+  border-radius: 30px;
+  
+}
+figcaption{
+  text-align:center;
+}
+a {
+  display:inline-block;
+  padding: 15px 20px;
+  background-color: orange;
+  border-radius: 10px;
+  text-decoration: none;
+  
+}
+.rightbox{
+  border: 3px solid green;
+  min-height:200px;
+}
+@media(min-width: 700px){
+  .top-box{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    padding: 5px 5px;
+  }
+}
+.fancy-head{
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.0;
+}
+.line-detail{
+  font-size: 16px;
+  font-weight: 100;
+  line height: 0.7;
+  font-family:Sans, Gerogia;
+  text-align:center;
+}
+
+
+/*Image Row Listing*/
+
+.picture-box{
+  border: 5px solid red;
+  display: block;
+  padding-top:20px;
+
+  text-align: center;
+  position: left;
+  
+}
+
+.image-listing{
+  display:inline-block;
+  border: 3px solid aqua;
+  padding-top: 5%;
+  
+}
+@media(min-width: 700px){
+  .picture-box{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 5px 5px;
+  }
+  
+  .quote-box{
+    border: 3px solid black;
+  }
+  .actual-quote{
+    display:flex;
+    border: 1px solid white;
+     font-size: 45px;
+    font-weight: 100;
+    line height: 0.7;
+    font-family:Sans, Gerogia;
+    text-align:center;
+    
+    
+  }
+  .quote-speaker{
+    font-family: Apple Chancery, cursive;
+    text-align:right;
+  }
